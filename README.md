@@ -6,7 +6,7 @@ This a project to create a webapp that acts as a personal library to save books 
 
 ## Library screenshot
 
-<img src="" width="100%"/>
+<img src="Screenshot.png" width="65%"/>
 
 In this project we build a simple library app with vanilla javascript where you can:
 
@@ -28,6 +28,8 @@ To set up a local copy of the project
 - `cd Library-App`
 
 ## Live Link of the project
+
+[Live-Library](https://rawcdn.githack.com/akshay-narkar/Library-App/4df667587a7695085bb3bbb87c7df4d1515ac0c8/index.html)
 
 ## Author
 

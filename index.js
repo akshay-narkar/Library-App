@@ -1,4 +1,5 @@
 const books = document.getElementById('books');
+const form = document.getElementById('form');
 
 const myLibrary = [];
 
@@ -6,6 +7,14 @@ function Book(author, title, pages) {
   this.author = author;
   this.title = title;
   this.pages = pages;
+}
+
+function displayForm() {
+  if (form.style.display === '') {
+    form.style.display = 'block';
+  } else {
+    form.style.display = '';
+  }
 }
 
 function addBookToLibrary(e) {
@@ -26,7 +35,6 @@ function addBookToLibrary(e) {
   <span>Read</span>
 </label>
   `;
-  console.log(li);
   books.appendChild(li);
   myLibrary.push([title.value, author.value, pages.value]);
 
@@ -37,7 +45,7 @@ function addBookToLibrary(e) {
 
 function loadEventListners() {
   document.querySelector('#form').addEventListener('submit', addBookToLibrary);
-
+  document.getElementById('addbtn').addEventListener('click', displayForm);
   document.addEventListener('click', (e) => {
     if (e.target.parentElement.classList.contains('delete')) {
       e.target.parentElement.parentElement.remove();

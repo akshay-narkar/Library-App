@@ -34,3 +34,15 @@ function addBookToLibrary(e) {
   document.querySelector('#author').value = '';
   document.querySelector('#pages').value = '';
 }
+
+function loadEventListners() {
+  document.querySelector('#form').addEventListener('submit', addBookToLibrary);
+
+  document.addEventListener('click', (e) => {
+    if (e.target.parentElement.classList.contains('delete')) {
+      e.target.parentElement.parentElement.remove();
+    }
+  });
+}
+
+loadEventListners();

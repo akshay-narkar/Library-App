@@ -29,7 +29,7 @@ To set up a local copy of the project
 
 ## Live Link of the project
 
-[Live-Library](https://rawcdn.githack.com/akshay-narkar/Library-App/4df667587a7695085bb3bbb87c7df4d1515ac0c8/index.html)
+[Live-Library](https://raw.githack.com/akshay-narkar/Library-App/logic-interface/index.html)
 
 ## Author
 

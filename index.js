@@ -11,36 +11,32 @@ function displayForm() {
   }
 }
 
-function displaybooks(book) {
+function displaybooks() {
   const li = document.createElement('li');
   li.className = 'collection-item';
-
-  li.innerHTML = `
-  <h5>Author: <span id="author">${book[0]}</span></h5>
-  <p>Title: ${book[1]} </p>
-  <p>Pages: ${book[2]}</span></p>
-  <a class="delete"><i class="far fa-trash-alt"></i></a>
-  <label>
-  <input type="checkbox" />
-  <span>Read</span>
-</label>
-  `;
-  books.appendChild(li);
-  document.querySelector('#title').value = '';
-  document.querySelector('#author').value = '';
-  document.querySelector('#pages').value = '';
+  for (let i = 0; i < myLibrary.length; i += 1) {
+    li.innerHTML = `
+    <h5>Author: <span id="author">${myLibrary[i][0]}</span></h5>
+    <p>Title: ${myLibrary[i][1]} </p>
+    <p>Pages: ${myLibrary[i][2]}</span></p>
+    <a class="delete"><i class="far fa-trash-alt"></i></a>
+    <label>
+    <input type="checkbox" />
+    <span>Read</span>
+    </label>
+    `;
+    books.appendChild(li);
+    document.querySelector('#title').value = '';
+    document.querySelector('#author').value = '';
+    document.querySelector('#pages').value = '';
+  }
 }
-
 function addBookToLibrary(e) {
   e.preventDefault();
 
   const [title, author, pages] = e.target.elements;
   myLibrary.push([title.value, author.value, pages.value]);
-
-  while (books.hasChildNodes()) {
-    books.removeChild(books.firstChild);
-  }
-  myLibrary.forEach(displaybooks);
+  displaybooks();
 }
 
 function loadEventListners() {

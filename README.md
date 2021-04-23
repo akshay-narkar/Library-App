@@ -1,65 +1,53 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Book Library
 
-> One paragraph statement about the project.
+This a project to create a webapp that acts as a personal library to save books you have read or to create a list of books to read.
 
-![screenshot](./app_screenshot.png)
+## Library screenshot
 
-Additional description about the project and its features.
+<img src="Screenshot.png" width="65%"/>
+
+In this project we build a simple library app with vanilla javascript where you can:
+
+- Add books
+- Remove Books
+- Mark added books as read
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- JavaScript
+- HTML
+- CSS
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To set up a local copy of the project
 
+- `git clone git@github.com:akshay-narkar/Library-App.git`
+- `cd Library-App`
 
-To get a local copy up and running follow these simple example steps.
+## Live Link of the project
 
-### Prerequisites
+[Live-Library](https://raw.githack.com/akshay-narkar/Library-App/logic-interface/index.html)
 
-### Setup
+## Author
 
-### Install
+👤 **Ralph Oburu**
 
-### Usage
+- Github: [Ralph-1](https://github.com/Ralph-1)
+- Twitter: [@NotRalph0](https://twitter.com/NotRalph0)
+- Linkedin: [Ralph](https://www.linkedin.com/in/ralph-oburu-092a561b1/)
 
-### Run tests
+👤 **Akshay Narkar**
 
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Github: [@akshay-narkar](https://github.com/akshay-narkar)
+- Twitter: [Akshay](https://www.twitter.com/akidoit)
+- Linkedin: [Akshay Narkar](https://www.linkedin.com/in/akshaynarkar25/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -67,10 +55,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to Odin project for the tutorials.
+- Wes Bos and Brad Traversy for their informative videos.
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](LICENSE) licensed.

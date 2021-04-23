@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://icons-for-free.com/iconfiles/png/512/bookshelf+library+icon-1320087270870761354.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Library App</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="col s12">
+        <div class="row">
+          <div id="main" class="card">
+            <span class="card-title center-align">Library App</span>
+            <div><a class="card-title waves-effect center-align waves-light btn" id="addbtn">Add Book</a></div>
+            <div class="card-content">
+              <div class="row">
+                <form id="form">
+                  <div class="col s12">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" required />
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required />
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" required />
+
+                    <input type="submit" value="Add book" class="btn" />
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="card-action">
+              <h5 class="books">Books</h5>
+              <ul id="books" class="collection"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

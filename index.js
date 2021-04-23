@@ -3,12 +3,6 @@ const form = document.getElementById('form');
 
 const myLibrary = [];
 
-function Book(author, title, pages) {
-  this.author = author;
-  this.title = title;
-  this.pages = pages;
-}
-
 function displayForm() {
   if (form.style.display === '') {
     form.style.display = 'block';
@@ -17,18 +11,14 @@ function displayForm() {
   }
 }
 
-function addBookToLibrary(e) {
-  e.preventDefault();
+function displaybooks(book) {
   const li = document.createElement('li');
-
   li.className = 'collection-item';
-  const [title, author, pages] = e.target.elements;
-  const book = new Book(title.value, author.value, pages.value);
 
   li.innerHTML = `
-  <h5>Author: <span id="author">${book.author}</span></h5>
-  <p>Title: ${book.title} </p>
-  <p>Pages: ${book.pages}</span></p>
+  <h5>Author: <span id="author">${book[0]}</span></h5>
+  <p>Title: ${book[1]} </p>
+  <p>Pages: ${book[2]}</span></p>
   <a class="delete"><i class="far fa-trash-alt"></i></a>
   <label>
   <input type="checkbox" />
@@ -36,11 +26,21 @@ function addBookToLibrary(e) {
 </label>
   `;
   books.appendChild(li);
-  myLibrary.push([title.value, author.value, pages.value]);
-
   document.querySelector('#title').value = '';
   document.querySelector('#author').value = '';
   document.querySelector('#pages').value = '';
+}
+
+function addBookToLibrary(e) {
+  e.preventDefault();
+
+  const [title, author, pages] = e.target.elements;
+  myLibrary.push([title.value, author.value, pages.value]);
+
+  while (books.hasChildNodes()) {
+    books.removeChild(books.firstChild);
+  }
+  myLibrary.forEach(displaybooks);
 }
 
 function loadEventListners() {
